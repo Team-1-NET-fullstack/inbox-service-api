@@ -30,7 +30,8 @@ namespace Inbox.Service.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            services.AddCors(); 
+            
             services.AddControllers();
             services.AddTransient<INoteRepository<Note>, NoteRepository>();
             services.AddTransient<NoteService, NoteService>();
@@ -51,6 +52,10 @@ namespace Inbox.Service.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Inbox.Service.API v1"));
             }
+            app.UseCors(x => x
+.AllowAnyOrigin()
+.AllowAnyMethod()
+.AllowAnyHeader());
 
             app.UseRouting();
 

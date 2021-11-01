@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\yogis\\OneDrive\\Desktop\\Inbox Service\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\Inbox.Service.API.csproj": {}
+    "C:\\Users\\yogis\\OneDrive\\Desktop\\Services\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\Inbox.Service.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\yogis\\OneDrive\\Desktop\\Inbox Service\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\Inbox.Service.API.csproj": {
+    "C:\\Users\\yogis\\OneDrive\\Desktop\\Services\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\Inbox.Service.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\yogis\\OneDrive\\Desktop\\Inbox Service\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\Inbox.Service.API.csproj",
+        "projectUniqueName": "C:\\Users\\yogis\\OneDrive\\Desktop\\Services\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\Inbox.Service.API.csproj",
         "projectName": "Inbox.Service.API",
-        "projectPath": "C:\\Users\\yogis\\OneDrive\\Desktop\\Inbox Service\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\Inbox.Service.API.csproj",
+        "projectPath": "C:\\Users\\yogis\\OneDrive\\Desktop\\Services\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\Inbox.Service.API.csproj",
         "packagesPath": "C:\\Users\\yogis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\yogis\\OneDrive\\Desktop\\Inbox Service\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\obj\\",
+        "outputPath": "C:\\Users\\yogis\\OneDrive\\Desktop\\Services\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\yogis\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -43,6 +43,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[10.1.1, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
