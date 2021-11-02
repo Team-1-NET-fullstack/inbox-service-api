@@ -32,14 +32,21 @@ namespace Inbox.Service.API.Controllers
         [HttpGet("GetNotesById")]
         public Object GetNotesById(int noteId)
         {
-            var data = _noteService.GetNotesById(noteId);
-            var json = JsonConvert.SerializeObject(data, Formatting.Indented,
-                new JsonSerializerSettings()
-                {
-                    ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-                }
-            );
-            return json;
+            try
+            {
+                var data = _noteService.GetNotesById(noteId);
+                var json = JsonConvert.SerializeObject(data, Formatting.Indented,
+                    new JsonSerializerSettings()
+                    {
+                        ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                    }
+                );
+                return json;
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
         }
 
 
@@ -52,38 +59,41 @@ namespace Inbox.Service.API.Controllers
                 await _noteService.AddNote(note);
                 return true;
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                return false;
+                return e.Message;
             }
         }
         //Delete Notes  
         [HttpDelete("DeleteNote")]
         public bool DeleteNote(int noteId)
         {
-            try
-            {
-                _noteService.DeleteNote(noteId);
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+
+            _noteService.DeleteNote(noteId);
+            return true;
+
         }
         //GET All Notes  
         [HttpGet("GetAllNotes")]
         public Object GetAllNotes()
         {
-            var data = _noteService.GetAllNotes();
-            var json = JsonConvert.SerializeObject(data, Formatting.Indented,
-                new JsonSerializerSettings()
-                {
-                    ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-                }
-            );
-            return json;
+            try
+            {
+                var data = _noteService.GetAllNotes();
+                var json = JsonConvert.SerializeObject(data, Formatting.Indented,
+                    new JsonSerializerSettings()
+                    {
+                        ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                    }
+                );
+                return json;
+            }
+            catch (Exception e)
+            {
+                return e.Message;
+            }
         }
     }
-    }
+}
+    
