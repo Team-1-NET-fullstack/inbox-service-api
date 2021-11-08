@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  inbox.service.api:
+    image: ${DOCKER_REGISTRY-}inboxserviceapi
+    build:
+      context: .
+      dockerfile: Inbox.Service.API/Dockerfile
