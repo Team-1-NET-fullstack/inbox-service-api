@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2WKBbk5lXEHkXWjHyuB7PuTEzwfA+fYNs5saM4DMAR4M1MQ0/FpvmcS7z/w8pU75XCXGRuVNwrwQZh0WCfmQCw==",
+  "dgSpecHash": "ENGPLwnlvrXHM/bj+8DdkyWpBIgpkcfXLqvHDv9L4Sxm+khfPYKJ53LsEwMcw2J4KBzk75fff0LrW145+K1rzg==",
   "success": true,
   "projectFilePath": "C:\\Users\\yogis\\OneDrive\\Desktop\\Services\\inbox-service-api\\Inbox.Service.API\\Inbox.Service.API\\Inbox.Service.API.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,7 @@
     "C:\\Users\\yogis\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\yogis\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\yogis\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\yogis\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\yogis\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\5.0.2\\microsoft.visualstudio.web.codegeneration.5.0.2.nupkg.sha512",
     "C:\\Users\\yogis\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.contracts\\5.0.2\\microsoft.visualstudio.web.codegeneration.contracts.5.0.2.nupkg.sha512",
     "C:\\Users\\yogis\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\5.0.2\\microsoft.visualstudio.web.codegeneration.core.5.0.2.nupkg.sha512",
